@@ -18,8 +18,8 @@ interface Countdown { d: string; h: string; m: string; s: string }
 
 // Isi path gambar (mis. '/assets/hero-bg-1.jpg') bila sudah ada. null = tampil placeholder.
 const IMG = {
-  logo: '/assets/logo-v-white.png',
-  coach: '/assets/coach-hd.png',
+  logo: '/assets/logo-landscape-1.webp',
+  coach: '/assets/coach-hd.webp',
   heroBg: [null, null, null] as (string | null)[],
   kurikulum: [null, null] as (string | null)[],
   testi: [null, null, null, null] as (string | null)[],
@@ -315,7 +315,7 @@ export default function Project(props: ProjectProps) {
         {/* HEADER */}
         <header className="sticky top-0 z-50 border-b border-white/8 bg-[rgba(11,21,48,.86)] backdrop-blur-[14px]">
           <div className="mx-auto flex max-w-[1200px] items-center gap-4 px-[clamp(16px,4vw,40px)] py-3">
-            <a href="#top" className="flex shrink-0 items-center"><img src={IMG.logo} alt="Adspreneur.id" className="block h-6 w-auto min-[720px]:h-[34px]" /></a>
+            <a href="#top" className="flex shrink-0 items-center"><img src={IMG.logo} alt="Adspreneur.id" width="180" height="34" loading="eager" fetchPriority="high" decoding="async" className="block h-6 w-auto min-[720px]:h-[34px]" /></a>
             <div className="hidden min-w-0 flex-1 truncate border-l border-white/14 pl-5 text-[13px] font-medium text-white/60 min-[980px]:block">Kelas praktek iklan digital</div>
             <div className="ml-auto flex shrink-0 items-center gap-2.5">
               <a href={waLink} target="_blank" rel="noopener" className="hidden items-center whitespace-nowrap rounded-[10px] border-[1.5px] border-white/24 px-[18px] py-[11px] text-sm font-bold text-white hover:border-white hover:text-white min-[720px]:inline-flex">Tanya admin</a>
@@ -341,7 +341,7 @@ export default function Project(props: ProjectProps) {
               <div className="pointer-events-auto relative order-1 aspect-[4/5] h-[min(36vh,380px)] max-w-[80vw] min-[980px]:h-[min(40vh,450px)]">
                 <div className="pointer-events-none absolute -inset-x-[30%] -inset-y-[18%] bg-[radial-gradient(closest-side,rgba(245,138,31,.38),rgba(26,79,160,.25)_55%,transparent_100%)]" />
                 <div className="absolute inset-0 overflow-hidden rounded-t-[28px] shadow-[inset_0_0_0_1px_rgba(245,138,31,.5)] [mask-image:linear-gradient(180deg,#000_62%,transparent_100%)]">
-                  <img src={IMG.coach} alt="Coach Adspreneur" className="absolute inset-0 h-full w-full object-cover" />
+                  <img src={IMG.coach} alt="Coach Adspreneur" width="360" height="450" loading="eager" fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
                 </div>
               </div>
               <div className="relative z-[2] order-2 hidden w-full items-center justify-start min-[980px]:flex"><ChipColumn list={CHIPS_RIGHT} side="right" /></div>
