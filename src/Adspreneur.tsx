@@ -151,9 +151,9 @@ function Slot({ src, label, tone = 'dark', alt = '' }: { src: string | null; lab
   );
 }
 
-function Badge({ children, dark }: { children: ReactNode; dark?: boolean }) {
+function Badge({ children, dark, className = '' }: { children: ReactNode; dark?: boolean; className?: string }) {
   return (
-    <span className={`inline-flex items-center gap-2.5 self-start rounded-full border px-3.5 py-[7px] text-xs font-bold tracking-[.14em] uppercase ${dark ? 'border-white/18 text-[#FFC58A]' : 'border-[rgba(14,26,51,.14)] text-[#1A4FA0]'}`}>
+    <span className={`inline-flex items-center gap-2.5 self-center rounded-full border px-3.5 py-[7px] text-xs font-bold tracking-[.14em] uppercase ${dark ? 'border-white/18 text-[#FFC58A]' : 'border-[rgba(14,26,51,.14)] text-[#1A4FA0]'} ${className}`}>
       <span className="h-[7px] w-[7px] rounded-full bg-[#F58A1F]" />
       {children}
     </span>
@@ -400,25 +400,29 @@ export default function Project(props: ProjectProps) {
 
         {/* MASALAH */}
         <section className={`bg-[#F6F4EF] ${SEC_PAD}`}>
-          <div className={`${WRAP} grid grid-cols-[repeat(auto-fit,minmax(min(100%,440px),1fr))] items-start gap-[clamp(40px,6vw,80px)]`}>
-            <div className="flex flex-col gap-6">
+          <div className={`${WRAP} flex flex-col gap-10`}>
+            <div className="mx-auto flex max-w-[820px] flex-col items-center gap-5 text-center">
               <Badge>Kenapa banyak yang boncos</Badge>
               <h2 className={H2_LIGHT}>Iklan jalan, budget habis, tapi chat nggak masuk?</h2>
-              <div className="flex flex-col gap-4 text-[clamp(15px,1.5vw,17px)] leading-[1.65] text-pretty text-[#3B4660]">
-                <p className="m-0">Boost post terus, budget habis, orderan nggak sebanding? Biasanya masalahnya di setup akun, campaign, dan cara baca data.</p>
-                <p className="m-0">Di sini kamu pasang iklan sungguhan di akunmu sendiri, dibimbing sampai tahu kapan iklan ditambah budget atau dimatikan.</p>
-                <p className="m-0 font-bold text-[#0E1A33]">Banyak peserta sudah dapat chat, bahkan orderan pertama, saat kelas masih berlangsung.</p>
-              </div>
-              <SectionCta label="Benahi iklanmu di kelas" waLink={waLink} />
             </div>
-            <div className={`flex flex-col gap-2 rounded-3xl bg-[#0B1530] p-[clamp(28px,4vw,44px)] text-white ${LIFT_LIGHT}`}>
-              <div className={`${DISPLAY.replace('font-extrabold', 'font-bold')} mb-3 text-[28px]`}>Tanda iklanmu perlu dibenahi</div>
-              {PROBLEMS.map(([t, d], i) => (
-                <div key={t} className={`grid grid-cols-[40px_1fr] gap-3.5 border-t border-white/10 ${i === PROBLEMS.length - 1 ? 'pt-[18px]' : 'py-[18px]'}`}>
-                  <span className={`${DISPLAY} text-[22px] text-[#F58A1F]`}>{pad2(i + 1)}</span>
-                  <div className="flex flex-col gap-1"><span className="text-base font-bold">{t}</span><span className="text-sm leading-[1.55] text-white/66">{d}</span></div>
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,440px),1fr))] items-start gap-[clamp(40px,6vw,80px)]">
+              <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-4 text-[clamp(15px,1.5vw,17px)] leading-[1.65] text-pretty text-[#3B4660]">
+                  <p className="m-0">Boost post terus, budget habis, orderan nggak sebanding? Biasanya masalahnya di setup akun, campaign, dan cara baca data.</p>
+                  <p className="m-0">Di sini kamu pasang iklan sungguhan di akunmu sendiri, dibimbing sampai tahu kapan iklan ditambah budget atau dimatikan.</p>
+                  <p className="m-0 font-bold text-[#0E1A33]">Banyak peserta sudah dapat chat, bahkan orderan pertama, saat kelas masih berlangsung.</p>
                 </div>
-              ))}
+                <SectionCta label="Benahi iklanmu di kelas" waLink={waLink} />
+              </div>
+              <div className={`flex flex-col gap-2 rounded-3xl bg-[#0B1530] p-[clamp(28px,4vw,44px)] text-white ${LIFT_LIGHT}`}>
+                <div className={`${DISPLAY.replace('font-extrabold', 'font-bold')} mb-3 text-[28px]`}>Tanda iklanmu perlu dibenahi</div>
+                {PROBLEMS.map(([t, d], i) => (
+                  <div key={t} className={`grid grid-cols-[40px_1fr] gap-3.5 border-t border-white/10 ${i === PROBLEMS.length - 1 ? 'pt-[18px]' : 'py-[18px]'}`}>
+                    <span className={`${DISPLAY} text-[22px] text-[#F58A1F]`}>{pad2(i + 1)}</span>
+                    <div className="flex flex-col gap-1"><span className="text-base font-bold">{t}</span><span className="text-sm leading-[1.55] text-white/66">{d}</span></div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -467,7 +471,7 @@ export default function Project(props: ProjectProps) {
         {/* TESTIMONI */}
         <section id="testimoni" className={`bg-[#F6F4EF] ${SEC_PAD}`}>
           <div className={`${WRAP} flex flex-col gap-10`}>
-            <div className="flex max-w-[800px] flex-col gap-5">
+            <div className="mx-auto flex max-w-[800px] flex-col items-center gap-5 text-center">
               <Badge>Hasil peserta</Badge>
               <h2 className={H2_LIGHT}>Mereka Sudah Mulai Dapat Chat &amp; Orderan dari Iklannya Sendiri</h2>
               <p className={`${SUB} text-[#55607A]`}>Skincare, fashion, makanan, sampai bisnis jasa. Ini cerita dari peserta yang sudah praktek.</p>
@@ -551,7 +555,7 @@ export default function Project(props: ProjectProps) {
         {/* SETELAH KELAS + GARANSI */}
         <section className={`bg-[#F6F4EF] ${SEC_PAD}`}>
           <div className={`${WRAP} flex flex-col gap-11`}>
-            <div className="flex max-w-[760px] flex-col gap-5">
+            <div className="mx-auto flex max-w-[760px] flex-col items-center gap-5 text-center">
               <Badge>Setelah kelas selesai</Badge>
               <h2 className={H2_LIGHT}>Kelas Selesai, Pendampingan Jalan Terus</h2>
               <p className={`${SUB} text-[#55607A]`}>Iklan butuh penyesuaian terus. Karena itu kamu nggak ditinggal setelah hari ke-2.</p>
@@ -579,7 +583,7 @@ export default function Project(props: ProjectProps) {
                 <p className="m-0 text-[13px] leading-[1.5]"><span className={`${TODO} font-bold`}>[ISI SYARAT &amp; KETENTUAN GARANSI]</span></p>
               </div>
             </div>
-            <SectionCta label="Daftar sekarang" waLink={waLink} />
+            <SectionCta label="Daftar sekarang" waLink={waLink} center />
           </div>
         </section>
 
@@ -588,7 +592,7 @@ export default function Project(props: ProjectProps) {
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(40%_50%_at_30%_60%,rgba(245,138,31,.12),transparent_70%)]" />
           <div className="relative mx-auto flex max-w-[1080px] flex-col gap-11 px-[clamp(20px,4vw,40px)]">
             <div className="flex flex-col items-center gap-[18px] text-center">
-              <span className="inline-flex items-center gap-2 text-xs font-extrabold tracking-[.14em] text-[#FF6B5E] uppercase"><span className="h-2 w-2 rounded-full bg-[#FF6B5E]" />Jadwal &amp; pendaftaran</span>
+              <span className="inline-flex items-center gap-2 self-center text-xs font-extrabold tracking-[.14em] text-[#FF6B5E] uppercase"><span className="h-2 w-2 rounded-full bg-[#FF6B5E]" />Jadwal &amp; pendaftaran</span>
               <h2 className={`${DISPLAY} m-0 text-[clamp(40px,6vw,68px)] leading-[.96] text-balance`}>Amankan Kursimu di Kelas Terdekat</h2>
               <p className="m-0 text-base leading-[1.6] text-white/70">Kursi dibatasi supaya setiap peserta tetap bisa dibimbing satu per satu.</p>
               <div className="mt-1.5 flex flex-wrap justify-center gap-2.5">
