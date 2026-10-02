@@ -48,7 +48,7 @@ const KEYFRAMES_AND_RESET = `html{scroll-behavior:smooth;scroll-padding-top:66px
 body{overflow-x:hidden;overflow-x:clip;max-width:100%}
 body{margin:0;background:#0B1530;color:#0E1A33;font-family:'Plus Jakarta Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 *{box-sizing:border-box}
-a{color:#DE7814;text-decoration:none}a:hover{color:#EC8A26}
+a{text-decoration:none}
 button{font-family:inherit}
 @keyframes adsMarq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes adsFade{0%{opacity:0}6%{opacity:1}33%{opacity:1}39%{opacity:0}100%{opacity:0}}
@@ -502,9 +502,11 @@ export default function Project(props: ProjectProps) {
               </strong>
             </p>
             <div className={"[display:flex] [flex-wrap:wrap] [justify-content:center] [gap:12px] [width:100%] [pointer-events:auto]"}>
-              <a className={"[flex:0_0_auto] [width:auto] [display:inline-flex] [align-items:center] [justify-content:center] [gap:10px] [padding:13px_22px] max-[719px]:[padding:13px_12px] [white-space:nowrap] [border-radius:10px] [background:linear-gradient(180deg,#DE7F24_0%,#C2650F_55%,#A3540C_100%)] [color:#FFFFFF] [border:1px_solid_rgba(255,255,255,.14)] [text-shadow:0_1px_0_rgba(0,0,0,.18)] [letter-spacing:.01em] [font-weight:800] [font-size:15px] [box-shadow:0_14px_34px_-12px_rgba(194,101,15,.75),inset_0_1px_0_rgba(255,255,255,.28)] [transition:transform_.15s] hover:[background:linear-gradient(180deg,#E88C30_0%,#CF6E14_55%,#B05C0F_100%)] hover:[color:#FFFFFF] hover:[transform:translateY(-2px)]"} href="#daftar">
-                <span className={"[width:18px] [height:18px] [background:#FFFFFF] [-webkit-mask:url(https://unpkg.com/lucide-static@0.460.0/icons/calendar-days.svg)_center/contain_no-repeat] [mask:url(https://unpkg.com/lucide-static@0.460.0/icons/calendar-days.svg)_center/contain_no-repeat]"}></span>
-                Lihat jadwal terdekat
+              <a style={{ color: '#FFFFFF' }} className={"[flex:0_0_auto] [width:auto] [display:inline-flex] [align-items:center] [justify-content:center] [gap:10px] [padding:13px_22px] max-[719px]:[padding:13px_12px] [white-space:nowrap] [border-radius:10px] [background:linear-gradient(180deg,#DE7F24_0%,#C2650F_55%,#A3540C_100%)] [color:#FFFFFF] !text-white [border:1px_solid_rgba(255,255,255,.14)] [text-shadow:0_1px_0_rgba(0,0,0,.18)] [letter-spacing:.01em] [font-weight:800] [font-size:15px] [box-shadow:0_14px_34px_-12px_rgba(194,101,15,.75),inset_0_1px_0_rgba(255,255,255,.28)] [transition:transform_.15s] hover:[background:linear-gradient(180deg,#E88C30_0%,#CF6E14_55%,#B05C0F_100%)] hover:[color:#FFFFFF] hover:!text-white hover:[transform:translateY(-2px)]"} href="#daftar">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                  <path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/>
+                </svg>
+                <span style={{ color: '#FFFFFF' }}>Lihat jadwal terdekat</span>
               </a>
             </div>
             <div className={"[display:grid] [grid-template-columns:repeat(4,auto)] [justify-content:center] [border-radius:14px] [border:1px_solid_rgba(255,255,255,.16)] [background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(11,21,48,.6))] [box-shadow:inset_0_1px_0_rgba(255,255,255,.12),0_20px_40px_-24px_rgba(0,0,0,.8)] [backdrop-filter:blur(8px)] [-webkit-backdrop-filter:blur(8px)] [overflow:hidden] [pointer-events:auto]"}>
