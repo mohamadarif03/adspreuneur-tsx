@@ -474,7 +474,7 @@ export default function Project(props: ProjectProps) {
             </span>
             <h1 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(40px,min(5vw,6vh),72px)] max-[979px]:[font-size:clamp(30px,min(8.6vw,6vh),56px)] [line-height:.94] [letter-spacing:-0.01em] [margin:0] [text-wrap:balance] [text-shadow:0_4px_30px_rgba(11,21,48,.85)]"}>
               Belajar Iklan Digital Sampai 
-              <span className={"[background:linear-gradient(100deg,#F2BE78_0%,#DE8A2E_50%,#EDAA5C_100%)] [-webkit-background-clip:text] [background-clip:text] [color:transparent]"}>
+              <span className={"[color:#DE8A2E]"}>
                 Chat, Klien & Orderan Masuk
               </span>
               , Langsung Praktek di Kelas
@@ -511,7 +511,7 @@ export default function Project(props: ProjectProps) {
               {heroStats.map((st, idx) => (
                 <Fragment key={idx}>
                 <div className={"[padding:10px_22px] max-[719px]:[padding:9px_12px] [display:flex] [flex-direction:column] [align-items:center] [gap:2px]"} style={{ "borderLeft": `${st.border}` }}>
-                  <span className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:26px] max-[719px]:[font-size:22px] [line-height:1] [background:linear-gradient(100deg,#F2BE78_0%,#DE8A2E_50%,#EDAA5C_100%)] [-webkit-background-clip:text] [background-clip:text] [color:transparent]"}>
+                  <span className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:26px] max-[719px]:[font-size:22px] [line-height:1] [color:#DE8A2E]"}>
                     {st.n}
                   </span>
                   <span className={"[font-size:12px] max-[719px]:[font-size:10.5px] [font-weight:700] [color:rgba(255,255,255,.75)] [letter-spacing:.04em]"}>
@@ -535,7 +535,7 @@ export default function Project(props: ProjectProps) {
                 <span className={"[width:7px] [height:7px] [border-radius:50%] [background:#C2650F] [box-shadow:0_0_0_3px_rgba(194,101,15,.18)]"}></span>
                 Tim Adspreneur
               </span>
-              <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [background:linear-gradient(180deg,#0E1A33_30%,#24407A_100%)] [-webkit-background-clip:text] [background-clip:text] [color:transparent] [text-wrap:balance]"}>
+              <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [color:#0E1A33] [text-wrap:balance]"}>
                 Praktisi Lapangan, Bukan Praktisi Teori
               </h2>
             </div>
@@ -555,7 +555,7 @@ export default function Project(props: ProjectProps) {
               <span className={"[width:7px] [height:7px] [border-radius:50%] [background:#C2650F] [box-shadow:0_0_0_3px_rgba(194,101,15,.18)]"}></span>
               Cocok untuk siapa
             </span>
-            <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [background:linear-gradient(180deg,#0E1A33_30%,#24407A_100%)] [-webkit-background-clip:text] [background-clip:text] [color:transparent] [text-wrap:balance]"}>
+            <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [color:#0E1A33] [text-wrap:balance]"}>
               Kelas Ini Bukan untuk Semua Orang
             </h2>
             <p className={"[margin:0] [font-size:clamp(15px,1.5vw,17px)] [line-height:1.6] [color:#55607A] [text-wrap:pretty]"}>
@@ -621,7 +621,7 @@ export default function Project(props: ProjectProps) {
               <span className={"[width:7px] [height:7px] [border-radius:50%] [background:#C2650F] [box-shadow:0_0_0_3px_rgba(194,101,15,.18)]"}></span>
               Kenapa banyak yang boncos
             </span>
-            <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [background:linear-gradient(180deg,#0E1A33_30%,#24407A_100%)] [-webkit-background-clip:text] [background-clip:text] [color:transparent] [text-wrap:balance]"}>
+            <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [color:#0E1A33] [text-wrap:balance]"}>
               Iklan Jalan, Budget Habis, Tapi Chat Nggak Masuk?
             </h2>
             <div className={"[display:flex] [flex-direction:column] [gap:16px] [font-size:clamp(15px,1.5vw,17px)] [line-height:1.65] [color:#3B4660] [text-wrap:pretty]"}>
@@ -668,7 +668,7 @@ export default function Project(props: ProjectProps) {
             </span>
             <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [text-wrap:balance] [text-shadow:0_4px_40px_rgba(36,87,184,.35)]"}>
               Belajar & Praktek Langsung di Kelas, 
-              <span className={"[background:linear-gradient(100deg,#F2BE78_0%,#DE8A2E_50%,#EDAA5C_100%)] [-webkit-background-clip:text] [background-clip:text] [color:transparent]"}>
+              <span className={"[color:#DE8A2E]"}>
                 Dimentori 1-on-1
               </span>
             </h2>
@@ -702,7 +702,7 @@ export default function Project(props: ProjectProps) {
               <span className={"[width:7px] [height:7px] [border-radius:50%] [background:#C2650F] [box-shadow:0_0_0_3px_rgba(194,101,15,.18)]"}></span>
               Metode & materi
             </span>
-            <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [background:linear-gradient(180deg,#0E1A33_30%,#24407A_100%)] [-webkit-background-clip:text] [background-clip:text] [color:transparent] [text-wrap:balance]"}>
+            <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [color:#0E1A33] [text-wrap:balance]"}>
               2 Hari, 8 Bagian Materi, Semua Dipraktekkan
             </h2>
             <p className={"[margin:0] [font-size:clamp(15px,1.5vw,17px)] [line-height:1.6] [color:#55607A]"}>
@@ -841,7 +841,7 @@ export default function Project(props: ProjectProps) {
               <span className={"[width:7px] [height:7px] [border-radius:50%] [background:#C2650F] [box-shadow:0_0_0_3px_rgba(194,101,15,.18)]"}></span>
               Setelah 2 hari
             </span>
-            <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [background:linear-gradient(180deg,#0E1A33_30%,#24407A_100%)] [-webkit-background-clip:text] [background-clip:text] [color:transparent] [text-wrap:balance]"}>
+            <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [color:#0E1A33] [text-wrap:balance]"}>
               Pulang dari Kelas, Kamu Bisa…
             </h2>
           </div>
@@ -952,7 +952,7 @@ export default function Project(props: ProjectProps) {
               <span className={"[width:7px] [height:7px] [border-radius:50%] [background:#C2650F] [box-shadow:0_0_0_3px_rgba(194,101,15,.18)]"}></span>
               Hasil peserta
             </span>
-            <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [background:linear-gradient(180deg,#0E1A33_30%,#24407A_100%)] [-webkit-background-clip:text] [background-clip:text] [color:transparent] [text-wrap:balance]"}>
+            <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [color:#0E1A33] [text-wrap:balance]"}>
               Mereka Sudah Mulai Dapat Chat & Orderan dari Iklannya Sendiri
             </h2>
             <p className={"[margin:0] [font-size:clamp(15px,1.5vw,17px)] [line-height:1.6] [color:#55607A] [text-wrap:pretty]"}>
@@ -1163,7 +1163,7 @@ export default function Project(props: ProjectProps) {
               <span className={"[width:7px] [height:7px] [border-radius:50%] [background:#C2650F] [box-shadow:0_0_0_3px_rgba(194,101,15,.18)]"}></span>
               Tempat & fasilitas
             </span>
-            <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5vw,60px)] [line-height:.98] [margin:0] [background:linear-gradient(180deg,#0E1A33_30%,#24407A_100%)] [-webkit-background-clip:text] [background-clip:text] [color:transparent] [text-wrap:balance]"}>
+            <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5vw,60px)] [line-height:.98] [margin:0] [color:#0E1A33] [text-wrap:balance]"}>
               Hotel Bintang 
               <span className={"[display:inline-flex] [align-items:center] [gap:.08em] [vertical-align:.04em] [filter:drop-shadow(0_2px_6px_rgba(194,101,15,.45))]"} aria-label="4">
                 <span className={"[display:inline-block] [width:.72em] [height:.72em] [background:linear-gradient(180deg,#F2BE78,#C2650F)] [clip-path:polygon(50%_0%,61%_35%,98%_35%,68%_57%,79%_91%,50%_70%,21%_91%,32%_57%,2%_35%,39%_35%)]"}></span>
@@ -1344,7 +1344,7 @@ export default function Project(props: ProjectProps) {
             </span>
             <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [text-wrap:balance] [text-shadow:0_4px_40px_rgba(36,87,184,.35)]"}>
               Begitu Daftar, Kamu Langsung Masuk 
-              <span className={"[background:linear-gradient(100deg,#F2BE78_0%,#DE8A2E_50%,#EDAA5C_100%)] [-webkit-background-clip:text] [background-clip:text] [color:transparent]"}>
+              <span className={"[color:#DE8A2E]"}>
                 Grup Peserta
               </span>
             </h2>
@@ -1446,7 +1446,7 @@ export default function Project(props: ProjectProps) {
       </section>
       <section className={"[background:radial-gradient(90%_60%_at_50%_0%,#FFFFFF_0%,#FBF9F4_100%)] [padding:clamp(56px,10vw,128px)_0]"} data-screen-label="FAQ">
         <div className={"[max-width:860px] [margin:0_auto] [padding:0_clamp(20px,4vw,40px)] [display:flex] [flex-direction:column] [gap:40px]"}>
-          <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [background:linear-gradient(180deg,#0E1A33_30%,#24407A_100%)] [-webkit-background-clip:text] [background-clip:text] [color:transparent] [text-align:center] [text-wrap:balance]"}>
+          <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(38px,5.4vw,64px)] [line-height:.96] [letter-spacing:-0.012em] [margin:0] [color:#0E1A33] [text-align:center] [text-wrap:balance]"}>
             Pertanyaan yang Sering Ditanyakan
           </h2>
           <div className={"[display:flex] [flex-direction:column] [gap:10px]"}>
@@ -1493,7 +1493,7 @@ export default function Project(props: ProjectProps) {
         <div className={"[position:relative] [max-width:900px] [margin:0_auto] [padding:0_clamp(20px,4vw,40px)] [display:flex] [flex-direction:column] [align-items:center] [text-align:center] [gap:26px]"}>
           <h2 className={"[font-family:'Barlow_Condensed',sans-serif] [font-weight:800] [font-size:clamp(42px,6.4vw,80px)] [line-height:.95] [margin:0] [text-wrap:balance] [text-shadow:0_4px_40px_rgba(36,87,184,.35)]"}>
             Mulai Iklan yang 
-            <span className={"[background:linear-gradient(100deg,#F2BE78_0%,#DE8A2E_50%,#EDAA5C_100%)] [-webkit-background-clip:text] [background-clip:text] [color:transparent]"}>
+            <span className={"[color:#DE8A2E]"}>
               Menghasilkan
             </span>
             , Bukan yang Menghabiskan Budget
