@@ -1,4 +1,4 @@
-import Adspreneur from './Adspreneur'
+import Adspreneur from './Adspreneur-new'
 
 function App() {
   return <Adspreneur />
